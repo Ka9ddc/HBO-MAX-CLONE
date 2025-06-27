@@ -1,0 +1,72 @@
+@import url("./global.css");
+
+main {
+  background: url("../images/background-subscription.png") no-repeat;
+  background-size: cover;
+}
+
+
+.title {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+/* Subscription Plans */
+
+.subscription {
+  background: url("../images/background-movies-series.png") no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.subscription__plans {
+  display: flex;
+  justify-content: space-around;
+  gap: 80px;
+  margin: 40px 0;
+  perspective: 2000px;
+  perspective-origin: top;
+}
+
+.subscription__card {
+  background: linear-gradient(0deg, transparent, #3b1e63);
+  padding: 40px 60px;
+  border-radius: 8px;
+  display: flex;
+  min-height: 600px;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 1s ease-in-out;
+}
+
+.subscription__description {
+  text-align: left;
+  list-style: none;
+  font-size: 1.25rem;
+  margin-bottom: 14px;
+  padding-left: 14px;
+}
+
+.subscription__price {
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  color: #ff00e5;
+  font-weight: 700;
+}
+
+.subscription__price .text--small {
+  color: #fff;
+}
+
+.subscription__description::marker {
+  content: "+";
+  font-size: 2rem;
+  margin: 0 8px 0 0;
+}
+
+.subscription__plan {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+}
